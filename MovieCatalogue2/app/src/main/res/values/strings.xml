@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Movie Collection</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="movies">Movies</string>
+    <string name="tv_show">TV Show</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="movies_tittle" translatable="false">Movies_Tittle</string>
+    <string name="duration" translatable="false">duration</string>
+    <string name="genre" translatable="false">Action,Comedy,Sci-fi</string>
+    <string name="rating_dummy" translatable="false">7.5</string>
+    <string name="out_of_ten_dummy" translatable="false">/10</string>
+    <string name="duration_dummy" translatable="false">2h 40min</string>
+    <string name="director">Director :</string>
+    <string name="director_dummy" translatable="false">M Night Syamalan</string>
+    <string name="overview">Overview :</string>
+    <string name="lorem_ipsum" translatable="false">Lorem Ipsum Dolor set Amet</string>
+    <string name="change_language">Change Language</string>
+</resources>

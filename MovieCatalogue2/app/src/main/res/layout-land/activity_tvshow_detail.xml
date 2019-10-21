@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".TvshowDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_detail_tvshowposter"
+            android:layout_width="176dp"
+            android:layout_height="261dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_background_imageview"
+            android:scaleType="fitXY"
+            android:src="@drawable/poster_bohemian"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_detail_tvshowjudul"
+            style="@style/text_view_custom"
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"
+            android:text="@string/movies_tittle"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toEndOf="@+id/img_detail_tvshowposter"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_detail_tvshowgenre"
+            style="@style/text_view_custom"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="24dp"
+            android:padding="5dp"
+            android:text="@string/genre"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/img_detail_tvshowposter"
+            app:layout_constraintEnd_toEndOf="@+id/tv_detail_tvshowjudul"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_detail_tvshowjudul"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_tvshowjudul"
+            app:layout_constraintVertical_bias="0.073" />
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/layout_detail_rating_section"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/img_detail_tvshowposter"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_tvshowgenre" />
+
+        <TextView
+            android:id="@+id/tv_directordummy"
+            style="@style/text_view_custom"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="248dp"
+            android:text="@string/director"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/include"
+            app:layout_constraintTop_toBottomOf="@+id/include" />
+
+        <TextView
+            android:id="@+id/tv_detail_tvshowdirector"
+            style="@style/text_view_custom"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/director_dummy"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_directordummy"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_directordummy"
+            app:layout_constraintTop_toBottomOf="@+id/tv_directordummy" />
+
+        <TextView
+            android:id="@+id/Overview"
+            style="@style/text_view_custom"
+            android:layout_width="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/overview"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_detail_tvshowposter" />
+
+        <TextView
+            android:id="@+id/tv_detail_tvshowsynopsis"
+            style="@style/text_view_custom"
+            android:layout_width="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/lorem_ipsum"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Overview" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

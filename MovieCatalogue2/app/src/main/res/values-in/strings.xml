@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Koleksi Film</string>
+    <string name="movies">Film</string>
+    <string name="title_notifications">Pemberitahuan</string>
+    <string name="overview">Sinopsis :</string>
+    <string name="tv_show">Acara TV</string>
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="director">"Sutradara : "</string>
+</resources>
